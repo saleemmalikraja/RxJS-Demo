@@ -15,6 +15,7 @@ import { DatePipe } from '@angular/common';
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { BehaviourSubjectComponent } from './behaviour-subject/behaviour-subject.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
+import { OperatorsComponent } from './operators/operators.component';
 
 const appRoutes: Routes = [
   { path: 'replay-subject', component: ReplaySubjectComponent },
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
   { path: 'subject', component: SubjectComponent },
   { path: 'simple-observable', component: SimpleObservableComponent },
   { path: 'promise', component: PromiseComponent },
+  { path: 'operators', component: OperatorsComponent },
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
   { path: '**', redirectTo: 'promise' }
 ];
@@ -35,7 +37,8 @@ const appRoutes: Routes = [
     SubjectComponent,
     AsyncSubjectComponent,
     BehaviourSubjectComponent,
-    ReplaySubjectComponent
+    ReplaySubjectComponent,
+    OperatorsComponent
   ],
   imports: [
     BrowserModule,
