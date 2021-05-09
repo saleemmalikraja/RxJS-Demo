@@ -45,7 +45,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes , {useHash: true}),
+    RouterModule.forRoot(appRoutes , { useHash: true, relativeLinkResolution: 'legacy' }),
     ...MaterialModules ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
