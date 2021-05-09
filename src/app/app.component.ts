@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-
+import { Observable } from 'rxjs';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
-import { Observable } from 'rxjs/internal/Observable';
-import { Router, RouterEvent, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
