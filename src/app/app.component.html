@@ -50,7 +50,8 @@
       <button
         type="button"
         aria-label="Toggle sidenav"
-        mat-icon-button
+        mat-button
+        class="mat-focus-indicator sidenav-toggle mat-button mat-button-base"
         (click)="drawer.toggle()"
         *ngIf="(isHandset | async)!.matches">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
