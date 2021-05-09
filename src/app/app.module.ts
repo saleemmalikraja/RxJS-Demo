@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -16,6 +15,7 @@ import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { BehaviourSubjectComponent } from './behaviour-subject/behaviour-subject.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { OperatorsComponent } from './operators/operators.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'replay-subject', component: ReplaySubjectComponent },
@@ -42,7 +42,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes , {useHash: true}),
